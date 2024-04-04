@@ -1,0 +1,16 @@
+footer {
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: var(--white-opt);
+}
+
+footer p a {
+    font-family: var(--title);
+    color: var(--black);
+    transition: all 0.4s ease;
+}
+
+footer p a:hover{
+    color: var(--corAleatoria);
+}

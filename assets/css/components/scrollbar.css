@@ -1,0 +1,14 @@
+@media screen and (min-width: 1024px) {
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: var(--white-scroll);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--corAleatoria); 
+        border-radius: 16px;
+      }
+}

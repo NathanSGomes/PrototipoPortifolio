@@ -1,0 +1,25 @@
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--dark-bg);
+
+        .nav-links li a {
+            color: var(--white);
+        }
+
+        nav.sticky {
+            background: var(--dark-nav);
+        }
+
+        .nav-links li a:hover {
+            color: var(--corAleatoria);
+        }
+
+        nav.sticky .nav-links li a:hover {
+            color: var(--corAleatoria);
+        }
+
+        
+    }
+
+
+}
