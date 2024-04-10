@@ -2,6 +2,7 @@
     width: 100%;
     height: 100vh;
     padding: 20px;
+    border-bottom: 2px solid var(--corAleatoria);
 }
 
 .home .home-content {
@@ -11,7 +12,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 2rem;
 }
 
@@ -20,11 +21,16 @@
 }
 
 .home .home-content .home-title h1 {
-    font-size: 5rem;
+    font-size: 2.15rem;
 }
 
 .home .home-content .home-title h2 {
-    font-size: 2.9rem;
+    font-size: 1.25rem;
+}
+
+.home .home-content .home-text {
+    font-size: 0.875rem;
+    text-align: center;
 }
 
 .home .home-content .home-social-media {
@@ -44,23 +50,67 @@
     transition: all 0.4s ease;
 }
 
-.home .home-content .home-social-media a:hover {
-    box-shadow: 0 0.5em 0.4em -0.4em var(--corAleatoria);
-    transform: translateY(-0.25em);
-}
-
 .home .home-content .home-social-media a i {
     font-size: 2.5rem;
     color: var(--black);
-    background-color: var(--white-opt); 
+    background-color: var(--white-opt);
 }
 
-.home .home-content .home-title,
-.home-text,
-.home-social-media {
-    width: 50%;
+@media screen and (min-width: 768px) {
+    .home .home-content {
+        align-items: flex-start;
+    }
+
+    .home .home-content .home-title h1 {
+        font-size: 3.25rem;
+    }
+
+    .home .home-content .home-title h2 {
+        font-size: 1.9rem;
+    }
+
+    .home .home-content .home-text {
+        font-size: 1rem;
+        text-align: start;
+    }
+
+    .home .home-content .home-title,
+    .home-text,
+    .home-social-media {
+        width: 50%;
+    }
+
 }
 
-section {
-    height: 100vh;
+@media screen and (min-width: 1024px) {
+
+    .home .home-content .home-title h1 {
+        font-size: 4.3rem;
+    }
+
+    .home .home-content .home-title h2 {
+        font-size: 2.5rem;
+    }
+
+    .home .home-content .home-social-media a:hover {
+        box-shadow: 0 0.5em 0.4em -0.4em var(--corAleatoria);
+        transform: translateY(-0.25em);
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .home .home-content .home-title h1 {
+        font-size: 5.3rem;
+    }
+
+    .home .home-content .home-title h2 {
+        font-size: 3.1rem;
+    }
+
+    .home .home-content .home-text {
+        font-size: 1.125rem;
+    }
+
 }

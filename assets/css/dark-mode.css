@@ -1,25 +1,38 @@
-@media screen and (prefers-color-scheme: dark) {
-    body {
-        background-color: var(--dark-bg);
+.dark-mode {
+    background-color: var(--black);
+    color: var(--white);
+    transition: all .4s ease;
 
-        .nav-links li a {
-            color: var(--white);
-        }
-
-        nav.sticky {
-            background: var(--dark-nav);
-        }
-
-        .nav-links li a:hover {
-            color: var(--corAleatoria);
-        }
-
-        nav.sticky .nav-links li a:hover {
-            color: var(--corAleatoria);
-        }
-
-        
+    nav.sticky {
+        background: rgba(20, 20, 20, .5) ;
     }
 
+    .nav-content .nav-links li a {
+        color: var(--white);
+    }
 
+    .home .home-content .home-social-media a {
+        background: linear-gradient(135deg, transparent 10%, var(--dark-opt) 5%);
+    }
+
+    .home .home-content .home-social-media a i {
+        color: var(--white);
+        background-color: var(--dark-opt);
+    }
+
+    footer {
+        background-color: var(--dark-opt);
+    }
+
+    footer p a {
+        color: var(--white);
+    }
+
+    @media screen and (min-width: 1024px) {
+        .nav-content .nav-links li a:hover {
+            color: var(--white-hover);
+        }
+
+       
+    }
 }

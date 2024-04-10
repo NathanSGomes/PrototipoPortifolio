@@ -1,4 +1,5 @@
 @import url(../fonts/fonts.css);
+@import url(dark-mode.css);
 @import url(/assets/css/components/scrollbar.css);
 @import url(/assets/css/components/header.css);
 @import url(/assets/css/components/section-home.css);
@@ -7,15 +8,17 @@
 :root {
     --title: "Anta";
     --text: "Kode Mono"; 
+    
     --white: #FFFFFF;
-    --black: #000000;
+    --white-bg: #FFF2E1;
+    --white-nav:#DAC0A3;
+    --dark-hover: #5B5B5B;
+    --white-opt: #EAD8C0;
+    --white-scroll: #D1BB9E;
 
-    --white-bg: #FFFDF3;
-    --white-opt: #F4F0DB;
-    --white-scroll: #BBAB8C;
-
-    --dark-bg: #191919;
+    --black: #191919;
     --dark-nav: #141414;
+    --white-hover: #A9A9A9;
     --dark-opt: #1E1E1E;
     --dark-scroll: #0c0a09;
 }
